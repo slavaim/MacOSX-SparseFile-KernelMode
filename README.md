@@ -21,7 +21,7 @@ Before the first usage the static DldSparseFile::sInitSparseFileSubsystem() init
 To create a sparse file backed by a file on a filesystem call the static function
 
  ```
-    static DldSparseFile*  withPath( __in const char* sparseFilePath,
+    static DldSparseFile*  DldSparseFile::withPath( __in const char* sparseFilePath,
                                      __in_opt vnode_t cawlCoveringVnode,
                                      __in_opt unsigned char* cawlCoveredVnodeID, // char bytes[16]
                                      __in_opt const char* identificationString );
