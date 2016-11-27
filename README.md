@@ -21,10 +21,10 @@ Before the first usage the static DldSparseFile::sInitSparseFileSubsystem() init
 To create a sparse file backed by a file on a filesystem call the static function
 
  ```
-    static DldSparseFile*  DldSparseFile::withPath( __in const char* sparseFilePath,
-                                     __in_opt vnode_t cawlCoveringVnode,
-                                     __in_opt unsigned char* cawlCoveredVnodeID, // char bytes[16]
-                                     __in_opt const char* identificationString );
+    static DldSparseFile*  DldSparseFile::withPath( __in const char* sparseFilePath, // path to a file
+                                                    __in_opt vnode_t cawlCoveringVnode, // set to NULL
+                                                    __in_opt unsigned char* cawlCoveredVnodeID, // set to NULL
+                                                    __in_opt const char* identificationString ); // set to NULL
   ```
  The sparseFilePath parameter is a path to a file on any mounted filesystem.
  You should ignore cawlCoveringVnode, cawlCoveredVnodeID and identificationString and set them to NULL. These parameters are optional and are used in MacOSX-Kernel-Filter project. Refer to MacOSX-Kernel-Filter ( https://github.com/slavaim/MacOSX-Kernel-Filter ) project for more information.
