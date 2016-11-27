@@ -32,10 +32,8 @@ To create a sparse file backed by a file on a filesystem call the static functio
  To perform file IO(read/write) call
  
  ```
-  void DldSparseFile::performIO(
-    __inout IoBlockDescriptor*  descriptors,
-    __in unsigned int dscrCount
-    );
+  void DldSparseFile::performIO( __inout IoBlockDescriptor*  descriptors,
+                                 __in unsigned int dscrCount );
  ```
  
  For an example of sparse IO file usage see DldCoveringFsd::rwData function implementation at https://github.com/slavaim/MacOSX-Kernel-Filter/blob/master/DLDriver/DldCoveringVnode.cpp#L1133
