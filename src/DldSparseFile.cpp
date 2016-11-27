@@ -514,8 +514,10 @@ DldSparseFile::withPath( __in const char* sparseFilePath,
     
     InitializeListHead( &sparseFile->listEntry );
     
-    sparseFile->mnt = vnode_mount( cawlCoveringVnode );
-    assert( sparseFile->mnt );
+    if( cawlCoveringVnode ){
+        sparseFile->mnt = vnode_mount( cawlCoveringVnode );
+        assert( sparseFile->mnt );
+    }
     
     sparseFile->dataFile.vnode = NULLVP;
     //sparseFile->validDataMapFile = NULLVP;
