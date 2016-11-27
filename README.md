@@ -6,7 +6,7 @@ The license model is a BSD Open Source License. This is a non-viral license, onl
 
 ##Features
 
-This is a sparse file implementation that can be used from macOS IOKit modules/kernel extensions. The DldSparseFile class is a C++ IOKit class that can be instantiated from IOKit module. The class is inherited from OSObject so it supports reference counting. As is common for IOKit classes the init() function must be called for each new allocated object as the class constructor is unable to report about errors due to lack of C++ exceptions support in IOKit.
+This is a sparse file implementation that can be used from macOS IOKit modules/kernel extensions. The DldSparseFile class is a C++ IOKit class that can be instantiated from IOKit module. The class is inherited from OSObject so it supports reference counting. As is common for IOKit classes the init() function must be called for each new allocated object as the class constructor is unable to report errors due to lack of C++ exceptions support in IOKit.
 
 This is a kernel mode only code, it can't be used for user mode projects without modification.
 
