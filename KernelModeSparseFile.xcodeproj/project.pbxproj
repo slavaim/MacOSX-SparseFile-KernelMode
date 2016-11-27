@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9BC77481DEB271200F9190F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9BC77461DEB271200F9190F /* InfoPlist.strings */; };
+		F9BC775C1DEB274000F9190F /* DldCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BC77531DEB274000F9190F /* DldCommon.h */; };
+		F9BC775D1DEB274000F9190F /* DldCommonHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9BC77541DEB274000F9190F /* DldCommonHashTable.cpp */; };
+		F9BC775E1DEB274000F9190F /* DldCommonHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BC77551DEB274000F9190F /* DldCommonHashTable.h */; };
+		F9BC775F1DEB274000F9190F /* DldSparseFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9BC77561DEB274000F9190F /* DldSparseFile.cpp */; };
+		F9BC77601DEB274000F9190F /* DldSparseFile.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BC77571DEB274000F9190F /* DldSparseFile.h */; };
+		F9BC77611DEB274000F9190F /* DldSupportingCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9BC77581DEB274000F9190F /* DldSupportingCode.cpp */; };
+		F9BC77621DEB274000F9190F /* DldSupportingCode.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BC77591DEB274000F9190F /* DldSupportingCode.h */; };
+		F9BC77631DEB274000F9190F /* DldUndocumentedQuirks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9BC775A1DEB274000F9190F /* DldUndocumentedQuirks.cpp */; };
+		F9BC77641DEB274000F9190F /* DldUndocumentedQuirks.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BC775B1DEB274000F9190F /* DldUndocumentedQuirks.h */; };
+		F9BC77661DEB2BFB00F9190F /* KernelModeSparseFile-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = F9BC77651DEB2BFB00F9190F /* KernelModeSparseFile-Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9BC773E1DEB271200F9190F /* KernelModeSparseFile.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KernelModeSparseFile.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BC77421DEB271200F9190F /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		F9BC77451DEB271200F9190F /* KernelModeSparseFile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KernelModeSparseFile-Info.plist"; sourceTree = "<group>"; };
+		F9BC77471DEB271200F9190F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9BC77531DEB274000F9190F /* DldCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DldCommon.h; sourceTree = "<group>"; };
+		F9BC77541DEB274000F9190F /* DldCommonHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DldCommonHashTable.cpp; sourceTree = "<group>"; };
+		F9BC77551DEB274000F9190F /* DldCommonHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DldCommonHashTable.h; sourceTree = "<group>"; };
+		F9BC77561DEB274000F9190F /* DldSparseFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DldSparseFile.cpp; sourceTree = "<group>"; };
+		F9BC77571DEB274000F9190F /* DldSparseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DldSparseFile.h; sourceTree = "<group>"; };
+		F9BC77581DEB274000F9190F /* DldSupportingCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DldSupportingCode.cpp; sourceTree = "<group>"; };
+		F9BC77591DEB274000F9190F /* DldSupportingCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DldSupportingCode.h; sourceTree = "<group>"; };
+		F9BC775A1DEB274000F9190F /* DldUndocumentedQuirks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DldUndocumentedQuirks.cpp; sourceTree = "<group>"; };
+		F9BC775B1DEB274000F9190F /* DldUndocumentedQuirks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DldUndocumentedQuirks.h; sourceTree = "<group>"; };
+		F9BC77651DEB2BFB00F9190F /* KernelModeSparseFile-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KernelModeSparseFile-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9BC77391DEB271200F9190F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9BC77331DEB271200F9190F = {
+			isa = PBXGroup;
+			children = (
+				F9BC77521DEB274000F9190F /* src */,
+				F9BC77431DEB271200F9190F /* KernelModeSparseFile */,
+				F9BC77401DEB271200F9190F /* Frameworks */,
+				F9BC773F1DEB271200F9190F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9BC773F1DEB271200F9190F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC773E1DEB271200F9190F /* KernelModeSparseFile.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9BC77401DEB271200F9190F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC77411DEB271200F9190F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9BC77411DEB271200F9190F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC77421DEB271200F9190F /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F9BC77431DEB271200F9190F /* KernelModeSparseFile */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC77441DEB271200F9190F /* Supporting Files */,
+			);
+			path = KernelModeSparseFile;
+			sourceTree = "<group>";
+		};
+		F9BC77441DEB271200F9190F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC77651DEB2BFB00F9190F /* KernelModeSparseFile-Prefix.pch */,
+				F9BC77451DEB271200F9190F /* KernelModeSparseFile-Info.plist */,
+				F9BC77461DEB271200F9190F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9BC77521DEB274000F9190F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC77531DEB274000F9190F /* DldCommon.h */,
+				F9BC77541DEB274000F9190F /* DldCommonHashTable.cpp */,
+				F9BC77551DEB274000F9190F /* DldCommonHashTable.h */,
+				F9BC77561DEB274000F9190F /* DldSparseFile.cpp */,
+				F9BC77571DEB274000F9190F /* DldSparseFile.h */,
+				F9BC77581DEB274000F9190F /* DldSupportingCode.cpp */,
+				F9BC77591DEB274000F9190F /* DldSupportingCode.h */,
+				F9BC775A1DEB274000F9190F /* DldUndocumentedQuirks.cpp */,
+				F9BC775B1DEB274000F9190F /* DldUndocumentedQuirks.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F9BC773A1DEB271200F9190F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BC775C1DEB274000F9190F /* DldCommon.h in Headers */,
+				F9BC77641DEB274000F9190F /* DldUndocumentedQuirks.h in Headers */,
+				F9BC77601DEB274000F9190F /* DldSparseFile.h in Headers */,
+				F9BC77661DEB2BFB00F9190F /* KernelModeSparseFile-Prefix.pch in Headers */,
+				F9BC775E1DEB274000F9190F /* DldCommonHashTable.h in Headers */,
+				F9BC77621DEB274000F9190F /* DldSupportingCode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F9BC773D1DEB271200F9190F /* KernelModeSparseFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BC774F1DEB271200F9190F /* Build configuration list for PBXNativeTarget "KernelModeSparseFile" */;
+			buildPhases = (
+				F9BC77381DEB271200F9190F /* Sources */,
+				F9BC77391DEB271200F9190F /* Frameworks */,
+				F9BC773A1DEB271200F9190F /* Headers */,
+				F9BC773B1DEB271200F9190F /* Resources */,
+				F9BC773C1DEB271200F9190F /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KernelModeSparseFile;
+			productName = KernelModeSparseFile;
+			productReference = F9BC773E1DEB271200F9190F /* KernelModeSparseFile.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9BC77341DEB271200F9190F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Slava-Imameev";
+			};
+			buildConfigurationList = F9BC77371DEB271200F9190F /* Build configuration list for PBXProject "KernelModeSparseFile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F9BC77331DEB271200F9190F;
+			productRefGroup = F9BC773F1DEB271200F9190F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9BC773D1DEB271200F9190F /* KernelModeSparseFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9BC773B1DEB271200F9190F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BC77481DEB271200F9190F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F9BC773C1DEB271200F9190F /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9BC77381DEB271200F9190F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BC77611DEB274000F9190F /* DldSupportingCode.cpp in Sources */,
+				F9BC775D1DEB274000F9190F /* DldCommonHashTable.cpp in Sources */,
+				F9BC775F1DEB274000F9190F /* DldSparseFile.cpp in Sources */,
+				F9BC77631DEB274000F9190F /* DldUndocumentedQuirks.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9BC77461DEB271200F9190F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9BC77471DEB271200F9190F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9BC774D1DEB271200F9190F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					DBG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F9BC774E1DEB271200F9190F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F9BC77501DEB271200F9190F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KernelModeSparseFile/KernelModeSparseFile-Prefix.pch";
+				INFOPLIST_FILE = "KernelModeSparseFile/KernelModeSparseFile-Info.plist";
+				MODULE_NAME = "Slava-Imameev.KernelModeSparseFile";
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		F9BC77511DEB271200F9190F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KernelModeSparseFile/KernelModeSparseFile-Prefix.pch";
+				INFOPLIST_FILE = "KernelModeSparseFile/KernelModeSparseFile-Info.plist";
+				MODULE_NAME = "Slava-Imameev.KernelModeSparseFile";
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9BC77371DEB271200F9190F /* Build configuration list for PBXProject "KernelModeSparseFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BC774D1DEB271200F9190F /* Debug */,
+				F9BC774E1DEB271200F9190F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BC774F1DEB271200F9190F /* Build configuration list for PBXNativeTarget "KernelModeSparseFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BC77501DEB271200F9190F /* Debug */,
+				F9BC77511DEB271200F9190F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9BC77341DEB271200F9190F /* Project object */;
+}
