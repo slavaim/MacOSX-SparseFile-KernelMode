@@ -12,7 +12,7 @@ This is a kernel mode only code, it can't be used for user mode projects without
 
 The sparse file is implemented as a storage over a general file. The B-Tree is used to store and access data.
 
-To use DldSparseFile class you should include all files from the src directory to your project. The repository contains an IOKit module project that is provided only for your convinience so you can check that files are compiled as a standalone project in your build environment.
+To use DldSparseFile class you should include all files from the src directory to your project. The repository contains an IOKit module project that is provided only for your convinience so you can check that files can be compiled as a standalone project in your build environment.
 
 ##Usage
 
