@@ -14,7 +14,7 @@
 
 //--------------------------------------------------------------------
 
-extern vfs_context_t gVfsContextSuser;
+vfs_context_t gVfsContextSuser;
 
 SInt32  gBTreeNodeAllocationCounter = 0x0;
 
@@ -51,7 +51,19 @@ int          DldSparseFile::sGrowDivisor = 0x2;
 
 IOReturn DldSparseFile::sInitSparseFileSubsystem()
 {
+    //
+    // N.B. call this function in the kernel context,
+    // for example an IOKit class start() routine is called in
+    // the kernel context
+    //
     IOReturn  RC = kIOReturnSuccess;
+    
+    //
+    // get the root context, it is assumed that this is a system thread
+    // context
+    //
+    gVfsContextSuser = vfs_context_current();
+    assert( gVfsContextSuser );
     
     if( ! DldInitUndocumentedQuirks() )
         return kIOReturnError;
