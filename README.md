@@ -36,4 +36,4 @@ To create a sparse file backed by a file on a filesystem call the static functio
                                  __in unsigned int dscrCount );
  ```
  
- For an example of sparse IO file usage see DldCoveringFsd::rwData function implementation at https://github.com/slavaim/MacOSX-Kernel-Filter/blob/master/DLDriver/DldCoveringVnode.cpp#L1133
+ For an example of sparse IO file usage see DldCoveringFsd::rwData function implementation at  https://github.com/slavaim/MacOSX-VFS-Isolation-Filter  or  https://github.com/slavaim/MacOSX-Kernel-Filter/blob/master/DLDriver/DldCoveringVnode.cpp#L1133
