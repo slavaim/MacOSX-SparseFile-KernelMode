@@ -16,7 +16,9 @@ To use DldSparseFile class you should include all files from the src directory t
 
 ##Usage
 
-Before the first usage the static DldSparseFile::sInitSparseFileSubsystem() initialization routine should be called. The counterpart routine DldSparseFile::sFreeSparseFileSubsystem() should be called on IOKit module unloading or after all DldSparseFile objects have been freed.
+There is an example of a kextd that uses sparse files to support VFS isolation layer, for details see https://github.com/slavaim/MacOSX-VFS-Isolation-Filter  .
+
+Before the first usage the static DldSparseFile::sInitSparseFileSubsystem() initialization routine should be called. The counterpart routine DldSparseFile::sFreeSparseFileSubsystem() should be called on IOKit module unloading or after all DldSparseFile objects have been freed. DldSparseFilesHashTable::CreateStaticTableWithSize() should also be called to initialize a hash table.
 
 To create a sparse file backed by a file on a filesystem call the static function
 
@@ -36,4 +38,4 @@ To create a sparse file backed by a file on a filesystem call the static functio
                                  __in unsigned int dscrCount );
  ```
  
- For an example of sparse IO file usage see DldCoveringFsd::rwData function implementation at  https://github.com/slavaim/MacOSX-VFS-Isolation-Filter  or  https://github.com/slavaim/MacOSX-Kernel-Filter/blob/master/DLDriver/DldCoveringVnode.cpp#L1133
+ For an example of sparse IO file usage see DldCoveringFsd::rwData function implementation at https://github.com/slavaim/MacOSX-Kernel-Filter/blob/master/DLDriver/DldCoveringVnode.cpp#L1133
