@@ -1,10 +1,10 @@
 # MacOSX-SparseFile-KernelMode
 
-##License
+## License
 
 The license model is a BSD Open Source License. This is a non-viral license, only asking that if you use it, you acknowledge the authors, in this case Slava Imameev.
 
-##Features
+## Features
 
 This is a sparse file implementation that can be used from macOS IOKit modules/kernel extensions. The DldSparseFile class is a C++ IOKit class that can be instantiated from IOKit module. The class is inherited from OSObject so it supports reference counting. As is common for IOKit classes the init() function must be called for each new allocated object as the class constructor is unable to report errors due to lack of C++ exceptions support in IOKit.
 
@@ -14,7 +14,7 @@ The sparse file is implemented as a storage over a general file. The B-Tree is u
 
 To use DldSparseFile class you should include all files from the src directory to your project. The repository contains an IOKit module project that is provided only for your convinience so you can check that files can be compiled as a standalone project in your build environment.
 
-##Usage
+## Usage
 
 There is an example of a kextd that uses sparse files to support VFS isolation layer, for details see https://github.com/slavaim/MacOSX-VFS-Isolation-Filter  .
 
